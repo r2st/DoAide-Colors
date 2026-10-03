@@ -1,0 +1,15 @@
+[Unit]
+Description=DoAide Colors Web
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/DoAide-Colors
+ExecStart=/usr/bin/npx serve dist -s -l tcp://172.18.0.1:3054
+Restart=always
+RestartSec=5
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
