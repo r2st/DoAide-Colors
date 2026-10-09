@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { hexToRgb, rgbToHex, rgbToHsl, hslToRgb, rgbToCmyk, cmykToRgb, getColorName, isLightColor } from '../utils/color';
 import CopyButton from '../components/CopyButton';
+import Head from '../components/Head';
 
 const formats = ['HEX', 'RGB', 'HSL', 'CMYK'];
 
@@ -78,6 +79,21 @@ export default function ColorConverter() {
 
   return (
     <div>
+      <Head
+        title="Color Converter — HEX, RGB, HSL, CMYK"
+        description="Convert colors between HEX, RGB, HSL, and CMYK formats instantly. Free online color converter with named color approximation."
+        path="/converter"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'WebApplication',
+          name: 'Color Converter',
+          url: 'https://colors.doaide.com/converter',
+          description: 'Convert colors between HEX, RGB, HSL, and CMYK formats with named color approximation.',
+          applicationCategory: 'DesignApplication',
+          operatingSystem: 'Any',
+          offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+        }}
+      />
       <div className="mb-8">
         <h1 className="section-title">Color Converter</h1>
         <p className="text-white/40">Convert colors between HEX, RGB, HSL, and CMYK formats.</p>

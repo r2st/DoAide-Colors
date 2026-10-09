@@ -12,6 +12,7 @@ const navLinks = [
   { path: '/brands', label: 'Brands' },
   { path: '/shadow', label: 'Shadow' },
   { path: '/fonts', label: 'Fonts' },
+  { path: '/blog', label: 'Blog' },
 ];
 
 export default function Layout() {

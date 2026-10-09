@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { getContrastRatio, hexToRgb, rgbToHsl, hslToRgb, rgbToHex } from '../utils/color';
 import CopyButton from '../components/CopyButton';
+import Head from '../components/Head';
 
 export default function ContrastChecker() {
   const [fg, setFg] = useState('#ffffff');
@@ -43,6 +44,21 @@ export default function ContrastChecker() {
 
   return (
     <div>
+      <Head
+        title="Color Contrast Checker — WCAG AA/AAA"
+        description="Free WCAG contrast checker — test text and background colors for AA and AAA accessibility compliance. Get instant ratio and fix suggestions."
+        path="/contrast"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'WebApplication',
+          name: 'WCAG Color Contrast Checker',
+          url: 'https://colors.doaide.com/contrast',
+          description: 'Test color combinations for WCAG AA/AAA accessibility compliance with instant contrast ratio.',
+          applicationCategory: 'DesignApplication',
+          operatingSystem: 'Any',
+          offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+        }}
+      />
       <div className="mb-8">
         <h1 className="section-title">Contrast Checker</h1>
         <p className="text-white/40">Check WCAG AA/AAA accessibility compliance for your color combinations.</p>

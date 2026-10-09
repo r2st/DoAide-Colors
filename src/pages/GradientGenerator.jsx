@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { randomHex } from '../utils/color';
 import CopyButton from '../components/CopyButton';
+import Head from '../components/Head';
 
 const presets = [
   { name: 'Sunset', stops: [{ color: '#f093fb', pos: 0 }, { color: '#f5576c', pos: 50 }, { color: '#fda085', pos: 100 }], type: 'linear', angle: 135 },
@@ -68,6 +69,21 @@ export default function GradientGenerator() {
 
   return (
     <div>
+      <Head
+        title="CSS Gradient Generator"
+        description="Create beautiful CSS gradients — linear, radial, and conic — with multiple color stops, presets, and live preview. Copy CSS instantly."
+        path="/gradient"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'WebApplication',
+          name: 'CSS Gradient Generator',
+          url: 'https://colors.doaide.com/gradient',
+          description: 'Create CSS gradients with live preview — linear, radial, and conic with multiple color stops.',
+          applicationCategory: 'DesignApplication',
+          operatingSystem: 'Any',
+          offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+        }}
+      />
       <div className="mb-8">
         <h1 className="section-title">Gradient Generator</h1>
         <p className="text-white/40">Create beautiful CSS gradients with live preview.</p>

@@ -11,6 +11,10 @@ import TailwindFinder from './pages/TailwindFinder';
 import BrandColors from './pages/BrandColors';
 import ShadowGenerator from './pages/ShadowGenerator';
 import FontPairing from './pages/FontPairing';
+import Blog from './pages/Blog';
+import WcagContrastGuide from './pages/blog/WcagContrastGuide';
+import ColorTheoryGuide from './pages/blog/ColorTheoryGuide';
+import CssGradientsGuide from './pages/blog/CssGradientsGuide';
 
 export default function App() {
   return (
@@ -27,6 +31,10 @@ export default function App() {
         <Route path="brands" element={<BrandColors />} />
         <Route path="shadow" element={<ShadowGenerator />} />
         <Route path="fonts" element={<FontPairing />} />
+        <Route path="blog" element={<Blog />} />
+        <Route path="blog/wcag-color-contrast-guide" element={<WcagContrastGuide />} />
+        <Route path="blog/color-theory-for-ui-design" element={<ColorTheoryGuide />} />
+        <Route path="blog/css-gradients-complete-guide" element={<CssGradientsGuide />} />
       </Route>
     </Routes>
   );

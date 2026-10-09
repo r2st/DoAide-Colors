@@ -4,6 +4,7 @@ import { generatePalette, randomHex, isLightColor, hexToRgb, rgbToHsl } from '..
 import { copyToClipboard } from '../utils/clipboard';
 import CopyButton from '../components/CopyButton';
 import ShareButtons from '../components/ShareButtons';
+import Head from '../components/Head';
 
 const harmonies = ['complementary', 'analogous', 'triadic', 'split-complementary', 'tetradic'];
 
@@ -78,6 +79,21 @@ export default function PaletteGenerator() {
 
   return (
     <div>
+      <Head
+        title="Color Palette Generator"
+        description="Generate harmonious 5-color palettes with complementary, analogous, triadic, and split-complementary harmony rules. Free, no login."
+        path="/palette"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'WebApplication',
+          name: 'Color Palette Generator',
+          url: 'https://colors.doaide.com/palette',
+          description: 'Generate harmonious 5-color palettes with complementary, analogous, triadic harmony rules.',
+          applicationCategory: 'DesignApplication',
+          operatingSystem: 'Any',
+          offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+        }}
+      />
       <div className="mb-8">
         <h1 className="section-title">Color Palette Generator</h1>
         <p className="text-white/40">Generate harmonious 5-color palettes for your design projects.</p>
