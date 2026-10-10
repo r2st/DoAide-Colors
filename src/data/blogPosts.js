@@ -23,4 +23,28 @@ export const blogPosts = [
     readTime: '7 min read',
     tags: ['CSS', 'gradients', 'web design', 'tutorial'],
   },
+  {
+    slug: 'color-psychology-marketing',
+    title: 'Color Psychology in Marketing: How Colors Influence Buying Decisions',
+    description: 'Discover how color psychology drives consumer behavior, brand perception, and conversions. Learn which colors boost sales and how to choose the right palette for your marketing.',
+    date: '2026-10-10',
+    readTime: '9 min read',
+    tags: ['color psychology', 'marketing', 'branding', 'conversion'],
+  },
+  {
+    slug: 'best-color-combinations-2026',
+    title: 'Best Color Combinations for Website Design 2026',
+    description: 'Explore the top color palettes and combinations for website design in 2026. Get ready-to-use hex codes, contrast ratios, and CSS snippets for modern web projects.',
+    date: '2026-10-10',
+    readTime: '10 min read',
+    tags: ['color combinations', 'web design', 'palettes', '2026 trends'],
+  },
+  {
+    slug: 'brand-color-palette-guide',
+    title: 'How to Create a Brand Color Palette: Step-by-Step Guide',
+    description: 'Learn how to build a brand color palette from scratch — from choosing a primary color to testing accessibility. A complete step-by-step guide with free tools.',
+    date: '2026-10-10',
+    readTime: '11 min read',
+    tags: ['branding', 'palette', 'design system', 'guide'],
+  },
 ];

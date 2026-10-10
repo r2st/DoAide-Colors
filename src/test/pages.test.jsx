@@ -79,6 +79,21 @@ describe('Blog', () => {
     renderAt('/blog/css-gradients-complete-guide');
     expect(screen.getByText(/Linear Gradients/)).toBeInTheDocument();
   });
+
+  it('renders color psychology marketing blog post', () => {
+    renderAt('/blog/color-psychology-marketing');
+    expect(screen.getByText(/Why Color Matters More Than You Think/)).toBeInTheDocument();
+  });
+
+  it('renders best color combinations 2026 blog post', () => {
+    renderAt('/blog/best-color-combinations-2026');
+    expect(screen.getByText(/What Makes a Great Website Color Combination/)).toBeInTheDocument();
+  });
+
+  it('renders brand color palette guide blog post', () => {
+    renderAt('/blog/brand-color-palette-guide');
+    expect(screen.getByText(/Define Your Brand Personality/)).toBeInTheDocument();
+  });
 });
 
 describe('Navigation', () => {

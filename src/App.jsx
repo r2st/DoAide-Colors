@@ -15,6 +15,9 @@ import Blog from './pages/Blog';
 import WcagContrastGuide from './pages/blog/WcagContrastGuide';
 import ColorTheoryGuide from './pages/blog/ColorTheoryGuide';
 import CssGradientsGuide from './pages/blog/CssGradientsGuide';
+import ColorPsychologyMarketing from './pages/blog/ColorPsychologyMarketing';
+import BestColorCombinations2026 from './pages/blog/BestColorCombinations2026';
+import BrandColorPaletteGuide from './pages/blog/BrandColorPaletteGuide';
 
 export default function App() {
   return (
@@ -35,6 +38,9 @@ export default function App() {
         <Route path="blog/wcag-color-contrast-guide" element={<WcagContrastGuide />} />
         <Route path="blog/color-theory-for-ui-design" element={<ColorTheoryGuide />} />
         <Route path="blog/css-gradients-complete-guide" element={<CssGradientsGuide />} />
+        <Route path="blog/color-psychology-marketing" element={<ColorPsychologyMarketing />} />
+        <Route path="blog/best-color-combinations-2026" element={<BestColorCombinations2026 />} />
+        <Route path="blog/brand-color-palette-guide" element={<BrandColorPaletteGuide />} />
       </Route>
     </Routes>
   );
